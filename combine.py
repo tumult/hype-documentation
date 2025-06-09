@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """
-Combine all markdown files in the /md/ directory into a single markdown file.
-Files are processed in alphabetical order. Converts images, YouTube videos, and document links to correct formats / srces.
+Combines all markdown files in the /md/ directory into a single markdown file. Files are processed in alphabetical order. Converts images, YouTube videos, and document links to correct formats / srces.
 
 Usage:
     python3 combine.py                  # Interactive mode - asks before deleting unused images
@@ -9,11 +8,18 @@ Usage:
     python3 combine.py -y               # Shorthand for automatic mode
 
 Features:
+- Version history is replaced with a link to the full version history
+- Converts HTML tables to markdown tables
 - Combines all .md files from /md/ directory into README.md
 - Processes YouTube videos into clickable thumbnails
 - Converts image references to GitHub raw URLs
 - Converts document links to full Tumult Hype documentation URLs
 - Analyzes and optionally cleans up unused image files
+- Replaces non-breaking spaces with regular spaces
+- Removes height for images for better display in github/markdown's mobile layout
+- Removes HTML class attributes for more efficient LLM ingestion
+- Removes empty alt attributes to reduce file size
+- Optimizes whitespace to remove redundancy
 """
 
 import os
@@ -318,6 +324,35 @@ def process_markdown_document_links(content):
     
     return re.sub(markdown_doc_pattern, replace_markdown_doc_link, content)
 
+def remove_image_height_dimensions(content):
+    """Remove height attributes from all img tags."""
+    # Pattern to match height attributes in img tags
+    height_pattern = r'(<img[^>]*)\s+height="[^"]*"([^>]*>)'
+    
+    def replace_height(match):
+        before_height = match.group(1)
+        after_height = match.group(2)
+        return before_height + after_height
+    
+    return re.sub(height_pattern, replace_height, content)
+
+def optimize_content_for_llm(content):
+    """Optimize content for LLM ingestion while preserving meaning."""
+    
+    # 1. Remove HTML class attributes
+    content = re.sub(r'\s+class="[^"]*"', '', content)
+    
+    # 2. Remove empty alt attributes
+    content = re.sub(r'\s+alt=""', '', content)
+    
+    # 3. Remove redundant whitespace
+    content = re.sub(r'\n{3,}', '\n\n', content)  # Max 2 consecutive newlines
+    content = re.sub(r'[ \t]+', ' ', content)     # Single spaces only
+    content = re.sub(r' +\n', '\n', content)      # Remove trailing spaces
+    content = re.sub(r'\n +', '\n', content)      # Remove leading spaces on lines
+    
+    return content
+
 def combine_markdown_files():
     """Combine all .md files in the current directory into a single markdown file."""
     
@@ -359,7 +394,11 @@ def combine_markdown_files():
             
             try:
                 with open(md_file, 'r', encoding='utf-8') as infile:
-                    content = infile.read()
+                    # Special case for 15versionhistory.md - replace with specific content
+                    if md_file.name == '15versionhistory.md':
+                        content = "# Version History\n  \nView full version history (here)[https://tumult.com/hype/documentation/#version-history]"
+                    else:
+                        content = infile.read()
                     
                     # Process YouTube videos, images, and document links
                     content = process_youtube_videos(content)
@@ -370,8 +409,14 @@ def combine_markdown_files():
                     content = process_image_paths(content)
                     content = process_markdown_document_links(content)
                     
+                    # Remove height dimensions from images
+                    content = remove_image_height_dimensions(content)
+                    
                     # Convert HTML tables to markdown tables
                     content = convert_html_tables_to_markdown(content)
+                    
+                    # Optimize content for LLM ingestion
+                    content = optimize_content_for_llm(content)
                     
                     # Replace non-breaking spaces with regular spaces
                     content = content.replace('\u00A0', ' ')
