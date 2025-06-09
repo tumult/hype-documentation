@@ -1,3 +1,5 @@
+# Tumult Hype Documentation
+
 # Overview
 
 Tumult Hype is the HTML5 creation app for macOS. Interactive content and animations made with Tumult Hype work on desktops, smartphones, and iPads.
@@ -735,9 +737,9 @@ There are four anchor point modes. These modes define the shape of the intersect
 
 
 
-| ![](https://raw.githubusercontent.com/tumult/hype-documentation/refs/heads/main/images/vector-shape-asymmetric@2x.png) Asymmetric | ![](https://raw.githubusercontent.com/tumult/hype-documentation/refs/heads/main/images/vector-shape-mirrored@2x.png) Mirrored |
+| ![](https://raw.githubusercontent.com/tumult/hype-documentation/refs/heads/main/images/vector-shape-asymmetric@2x.png)<br>Asymmetric | ![](https://raw.githubusercontent.com/tumult/hype-documentation/refs/heads/main/images/vector-shape-mirrored@2x.png)<br>Mirrored |
 | --- | --- |
-| ![](https://raw.githubusercontent.com/tumult/hype-documentation/refs/heads/main/images/vector-shape-disconnected@2x.png) Disconnected | ![](https://raw.githubusercontent.com/tumult/hype-documentation/refs/heads/main/images/vector-shape-corner@2x.png) Corner |
+| ![](https://raw.githubusercontent.com/tumult/hype-documentation/refs/heads/main/images/vector-shape-disconnected@2x.png)<br>Disconnected | ![](https://raw.githubusercontent.com/tumult/hype-documentation/refs/heads/main/images/vector-shape-corner@2x.png)<br>Corner |
  
 
 
@@ -915,7 +917,7 @@ The table below outlines MP3 & Theora audio format support for major desktop and
 | Browser | MP3 Support | OGG Support |
 | --- | --- | --- |
 | Chrome | ✓ | ✓ |
-| Firefox | Mostly ✓ Windows Vista+ (2006) since Firefox 22.0, Android since Firefox 20.0, Firefox OS since Firefox 15.0, Linux since Firefox 26.0 (relies on GStreamer codecs) and OS X 10.7 (2011) since Firefox 35. | ✓ |
+| Firefox | Mostly ✓<br>Windows Vista+ (2006) since Firefox 22.0, Android since Firefox 20.0, Firefox OS since Firefox 15.0, Linux since Firefox 26.0 (relies on GStreamer codecs) and OS X 10.7 (2011) since Firefox 35. | ✓ |
 | Safari & Mobile Safari | ✓ | ✖ |
 | Internet Explorer | ✓ | ✖ |
 | Internet Explorer Edge | ✓ | ✖ |

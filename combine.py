@@ -348,6 +348,8 @@ def combine_markdown_files():
     
     # Combine files
     with open(output_file, 'w', encoding='utf-8') as outfile:
+        # Add header at the top of the README.md file
+        outfile.write("# Tumult Hype Documentation\n\n")
         
         for i, md_file in enumerate(md_files):
             print(f"Processing: {md_file.name}")
