@@ -324,6 +324,17 @@ def process_markdown_document_links(content):
     
     return re.sub(markdown_doc_pattern, replace_markdown_doc_link, content)
 
+def process_hype_pro_links(content):
+    """Convert HYPE PRO ONLY HTML links to markdown format."""
+    # Pattern to match the specific HTML link format for HYPE PRO ONLY
+    # This matches variations with tumult.com/hype/pro, tumult.com/hype/, etc.
+    hype_pro_pattern = r'<a href="https://tumult\.com/hype[^"]*" alt="Learn More" title="Learn More"[^>]*>HYPE PRO ONLY<br><div[^>]*></div></a>'
+    
+    def replace_hype_pro_link(match):
+        return '[HYPE PRO ONLY – Learn More](https://tumult.com/hype/pro)'
+    
+    return re.sub(hype_pro_pattern, replace_hype_pro_link, content)
+
 def remove_image_height_dimensions(content):
     """Remove height attributes from all img tags."""
     # Pattern to match height attributes in img tags
@@ -396,7 +407,7 @@ def combine_markdown_files():
                 with open(md_file, 'r', encoding='utf-8') as infile:
                     # Special case for 15versionhistory.md - replace with specific content
                     if md_file.name == '15versionhistory.md':
-                        content = "# Version History\n  \nView full version history (here)[https://tumult.com/hype/documentation/#version-history]"
+                        content = "# Version History\n  \nView full version history [here](https://tumult.com/hype/documentation/#version-history)"
                     else:
                         content = infile.read()
                     
@@ -408,6 +419,7 @@ def combine_markdown_files():
                     content = process_markdown_document_links(content)
                     content = process_image_paths(content)
                     content = process_markdown_document_links(content)
+                    content = process_hype_pro_links(content)
                     
                     # Remove height dimensions from images
                     content = remove_image_height_dimensions(content)

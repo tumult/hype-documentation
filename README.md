@@ -44,7 +44,7 @@ Tumult Hype Professional is available as an in-app purchase and adds many powerf
 
 This user guide walks you through the entire product and gives in-depth details on the workings of both Tumult Hype and Tumult Hype Professional. To help distinguish between Standard and Professional features, all documentation chapters or sections covering Professional features begin with the following label:
 
-<a href="https://tumult.com/hype/pro" alt="Learn More" title="Learn More">HYPE PRO ONLY<br><div></div></a>
+[HYPE PRO ONLY – Learn More](https://tumult.com/hype/pro)
 
 Any chapters or sections without this label cover features available in both Tumult Hype and Tumult Hype Professional.
 
@@ -168,7 +168,7 @@ One very powerful feature in the View > Guides menu is the Add Multiple Guides c
 
 ## Grid System
 
-<a href="https://tumult.com/hype/pro" alt="Learn More" title="Learn More">HYPE PRO ONLY<br><div></div></a>
+[HYPE PRO ONLY – Learn More](https://tumult.com/hype/pro)
 
 To help you arrange your content, Hype Pro supports layout grids. Hype Pro's layout grids follow the spirit of the popular [960 Grid System](http://960.gs) by letting you easily create columns and gutters to arrange content.
 
@@ -232,7 +232,7 @@ Tumult Hype embeds audio using the web audio api. For information about playing 
 
 ## Sprite Sheet
 
-<a href="https://tumult.com/hype/pro" alt="Learn More" title="Learn More">HYPE PRO ONLY<br><div></div></a>
+[HYPE PRO ONLY – Learn More](https://tumult.com/hype/pro)
 
 Sprite sheets created in Tumult Hype generate a sequence of images to create a frame animation on the timeline. Sprite sheets may be generated from any of the following source images:
 
@@ -544,7 +544,7 @@ Elements at the top of the layer order will intercept mouse or touch actions eve
 
 # Sprite Sheets
 
-<a href="https://tumult.com/hype/pro" alt="Learn More" title="Learn More">HYPE PRO ONLY<br><div></div></a>
+[HYPE PRO ONLY – Learn More](https://tumult.com/hype/pro)
 
 Tumult Hype's sprite sheet tool creates a frame animation on your scene based on a sequence of images, a pre-built sprite sheet, or an animated GIF. Hype will use these source images to create a sprite sheet you may control as regular animation in your scene.
 
@@ -1308,7 +1308,7 @@ Easily modify the paths representing timing functions in the editor:
 
 ## Editable Timing Functions
 
-<a href="https://tumult.com/hype/pro" alt="Learn More" title="Learn More">HYPE PRO ONLY<br><div></div></a>
+[HYPE PRO ONLY – Learn More](https://tumult.com/hype/pro)
 
 In addition to the 24 timing functions added to Hype 3, Hype Pro lets you create your own timing functions. All of the default timing functions show the Bézier path control points that define their behavior, and adding, deleting, or editing those points creates a new timing function based on the original. You can also create new timing functions from scratch by clicking the plus button in the lower left corner of the popover.
 
@@ -1437,7 +1437,7 @@ Because relative keyframes take into account the position of elements on other t
 
 # Responsive Layouts
 
-<a href="https://tumult.com/hype/pro" alt="Learn More" title="Learn More">HYPE PRO ONLY<br><div></div></a>
+[HYPE PRO ONLY – Learn More](https://tumult.com/hype/pro)
 
 Responsive layouts make it easy to make your document look great on every size screen. Hype allows you to create multiple layouts for a single scene which are shown at specific breakpoints. When displayed in a browser Hype will dynamically load the correct layout based on the current width of the device's viewport.
 
@@ -1654,7 +1654,7 @@ Clicking the Plus button in any action handler’s section appends a new action 
 
 # Physics
 
-<a href="https://tumult.com/hype/pro" alt="Learn More" title="Learn More">HYPE PRO ONLY<br><div></div></a>
+[HYPE PRO ONLY – Learn More](https://tumult.com/hype/pro)
 
 Physics introduces a whole new way of animating elements in Hype. Hype Pro offers you control over an element's physical properties – bounce, friction, air drag, and density – and over the scene's gravity. Together, those properties enable complex, dynamic animations that would be difficult to create with just a keyframe based animation system.
 
@@ -1734,7 +1734,7 @@ Tumult Hype's physics system is based on the comprehensive JavaScript-based phys
 
 # Symbols
 
-<a href="https://tumult.com/hype/pro" alt="Learn More" title="Learn More">HYPE PRO ONLY<br><div></div></a>
+[HYPE PRO ONLY – Learn More](https://tumult.com/hype/pro)
 
 Symbols are a powerful tool which let you easily reuse elements, timelines, and animations. Think of symbols as scenes within scenes: symbols contain their own elements, timelines, actions, and behaviors that can be triggered independently from the scene's. Because editing one instance of a symbol changes all instances, symbols are also useful for sharing identical elements across multiple scenes or at different positions in the same scene.
 
@@ -1814,7 +1814,7 @@ Symbols can be exported and imported for re-use in other documents via the Symbo
 
 ## Behaviors
 
-<a href="https://tumult.com/hype/pro" alt="Learn More" title="Learn More">HYPE PRO ONLY<br><div></div></a>
+[HYPE PRO ONLY – Learn More](https://tumult.com/hype/pro)
 
 Custom behaviors allow you to create your own action handlers that can be triggered like Hype's built-in action handlers. Just like Hype's built-in action handlers, your own behaviors can trigger a series of actions. Behaviors ensure you don't repeat any work when creating and using complex actions. For example, you might want to simultaneously start three timelines when a scene loads and then later start those same three timelines when the user clicks a button. Before behaviors you would have to set up those three Start Timeline actions both in an On Scene Load and an On Mouse Click action handler. Now, with behaviors, you can create one new behavior that invokes Start Timeline and have the On Scene Load and On Mouse Click action handlers run that behavior. Furthermore, if you decide to change which timelines are run, only need to make changes once for the behavior.
 
@@ -1949,7 +1949,7 @@ Switch between different scenes within Hype Reflect by tapping the Scenes icon i
 
 ## Responsive Preview Mode
 
-<a href="https://tumult.com/hype/pro" alt="Learn More" title="Learn More">HYPE PRO ONLY<br><div></div></a>
+[HYPE PRO ONLY – Learn More](https://tumult.com/hype/pro)
 
 Responsive preview mode is a great way to test [Responsive Layouts](#responsive-layouts) and [Flexible Layouts](#flexible-layout) in your document. Tap the responsive preview icon to enter this mode. When selected, device icons appear at the bottom of Hype Reflect for switching to smaller device widths. When selecting smaller devices, drag handles appear on either side of your document. This feature is supported when previewing from Hype Professional on an iPhone 6 or larger. Your device will allow previewing at your current resolution and smaller. Previewing on an iPad is preferable, as a wide array of iOS device widths can be tested.
 
@@ -2227,7 +2227,7 @@ Besides keeping image sizes as small as possible, hosting your exported document
 
 # Export Scripts
 
-<a href="https://tumult.com/hype/pro" alt="Learn More" title="Learn More">HYPE PRO ONLY<br><div></div></a>
+[HYPE PRO ONLY – Learn More](https://tumult.com/hype/pro)
 
 Export Scripts help automate workflows involving Tumult Hype’s output. A common use case is that Ad networks often need files to be zipped and in a very specific format. Once installed, Export Scripts add an item in the File > Export as HTML menu and extend Tumult Hype’s UI allowing modifications to the outgoing HTML5 content. Export Scripts can be developed by anyone to augment Tumult Hype's output.
 
@@ -2310,7 +2310,7 @@ For more information on building your own Export Scripts, please visit the [Hype
 
 # Templates
 
-<a href="https://tumult.com/hype/pro" alt="Learn More" title="Learn More">HYPE PRO ONLY<br><div></div></a>
+[HYPE PRO ONLY – Learn More](https://tumult.com/hype/pro)
 
 Templates are "freeze dried" Hype documents – opening a Hype template creates a new document based on the opened template. Any document can be saved as a template by choosing File > Save Template. Once created, templates cannot be edited. Thus to change a template, you'll want to create a new document by opening that template and then save over the old template by choosing File > Save Template.
 
@@ -2497,7 +2497,7 @@ Since Tumult Hype documents are built in HTML, Javascript, and CSS, they can be 
 
 ## Advanced Export
 
-<a href="https://tumult.com/hype/" alt="Learn More" title="Learn More">HYPE PRO ONLY<br><div></div></a>
+[HYPE PRO ONLY – Learn More](https://tumult.com/hype/pro)
 
 A typical Hype export includes all scenes, layouts, and resources. Advanced Export gives you full control over what Scenes, Layouts, and Resources are included in your export, and provides advanced control for situations where you require small download sizes. Let's say you're working on a series of three advertisements:
 
@@ -2670,7 +2670,7 @@ To help minimize document size, improve compatibility with all browsers, and imp
 
 ## Poster Images
 
-<a href="https://tumult.com/hype/pro" alt="Learn More" title="Learn More">HYPE PRO ONLY<br><div></div></a>
+[HYPE PRO ONLY – Learn More](https://tumult.com/hype/pro)
 
 Poster images, also known as a fallback or backup image, are a static image generated from the moment of your choosing in a Hype scene. This image typically represents the first frame of the first scene but you may choose from any scene or time to capture a poster image.
 
@@ -3434,7 +3434,7 @@ This area displays the timelines on the current scene, their duration, and toggl
 
 ## Symbol Inspector
 
-<a href="https://tumult.com/hype/pro" alt="Learn More" title="Learn More">HYPE PRO ONLY<br><div></div></a>
+[HYPE PRO ONLY – Learn More](https://tumult.com/hype/pro)
 
 Hype replaces the Scene inspector with the Symbol inspector when you are actively editing a symbol's content. Double click a symbol to enter editing mode and display this inspector.
 
@@ -3479,7 +3479,7 @@ Sets the X, Y, and Z rotation angles. At this time only one rotation angle may b
 
 ## Vector Shape Inspector
 
-<a href="https://tumult.com/hype/pro" alt="Learn More" title="Learn More">HYPE PRO ONLY<br><div></div></a>
+[HYPE PRO ONLY – Learn More](https://tumult.com/hype/pro)
 
 <img src="https://raw.githubusercontent.com/tumult/hype-documentation/refs/heads/main/images/inspector4-vector-shape@2x.png" width="260" alt="vector shape inspector"/>
 
@@ -3508,7 +3508,7 @@ For more detailed information, view [Path Options](#path-options).
 
 ## Pencil Inspector
 
-<a href="https://tumult.com/hype/pro" alt="Learn More" title="Learn More">HYPE PRO ONLY<br><div></div></a>
+[HYPE PRO ONLY – Learn More](https://tumult.com/hype/pro)
 
 <img src="https://raw.githubusercontent.com/tumult/hype-documentation/refs/heads/main/images/inspector-pencil@2x.png" width="270"/>
 
@@ -3583,7 +3583,7 @@ The actions listed occur based on what element or elements have been selected.
 
 ## Physics Inspector
 
-<a href="https://tumult.com/hype/pro" alt="Learn More" title="Learn More">HYPE PRO ONLY<br><div></div></a>
+[HYPE PRO ONLY – Learn More](https://tumult.com/hype/pro)
 
 The Physics Inspector controls physics properties of the selected elements or scene.
 
@@ -3629,7 +3629,7 @@ The Identity inspector provides access to metadata for elements and information 
 
 ### HTML Attributes
 
-<a href="https://tumult.com/hype/pro" alt="Learn More" title="Learn More">HYPE PRO ONLY<br><div></div></a>
+[HYPE PRO ONLY – Learn More](https://tumult.com/hype/pro)
 
 HTML Attributes are useful for setting custom attributes for any element in Hype.
 
@@ -3901,4 +3901,4 @@ Please visit the [Exporting & Previewing chapter](#preview-amp-export) for help 
 
 # Version History
 
-View full version history (here)[https://tumult.com/hype/documentation/#version-history]
+View full version history [here](https://tumult.com/hype/documentation/#version-history)
